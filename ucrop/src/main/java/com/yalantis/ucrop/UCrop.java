@@ -264,6 +264,7 @@ public class UCrop {
 
         public static final String EXTRA_ALLOWED_GESTURES = EXTRA_PREFIX + ".AllowedGestures";
 
+        public static final String EXTRA_CROP_RECT_MIN_SIZE = EXTRA_PREFIX + ".CropRectMinSize";
         public static final String EXTRA_MAX_BITMAP_SIZE = EXTRA_PREFIX + ".MaxBitmapSize";
         public static final String EXTRA_MAX_SCALE_MULTIPLIER = EXTRA_PREFIX + ".MaxScaleMultiplier";
         public static final String EXTRA_IMAGE_TO_CROP_BOUNDS_ANIM_DURATION = EXTRA_PREFIX + ".ImageToCropBoundsAnimDuration";
@@ -352,6 +353,14 @@ public class UCrop {
          */
         public void setImageToCropBoundsAnimDuration(@IntRange(from = MIN_SIZE) int durationMillis) {
             mOptionBundle.putInt(EXTRA_IMAGE_TO_CROP_BOUNDS_ANIM_DURATION, durationMillis);
+        }
+
+        /**
+         * 裁剪矩形框的最小尺寸
+         * @param cropRectMinSize - size in pixels
+         */
+        public void setCropRectMinSize(@IntRange(from = 1) int cropRectMinSize) {
+            mOptionBundle.putInt(EXTRA_CROP_RECT_MIN_SIZE, cropRectMinSize);
         }
 
         /**

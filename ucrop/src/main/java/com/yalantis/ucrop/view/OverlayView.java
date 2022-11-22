@@ -100,6 +100,10 @@ public class OverlayView extends View {
         mCallback = callback;
     }
 
+    public void setCropRectMinSize(int cropRectMinSize) {
+        mCropRectMinSize = cropRectMinSize;
+    }
+
     @NonNull
     public RectF getCropViewRect() {
         return mCropViewRect;
