@@ -9,10 +9,11 @@ buildscript {
 
     repositories {
         mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
+        google()
+//        maven {
+//            url 'https://maven.google.com/'
+//            name 'Google'
+//        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
@@ -29,10 +30,11 @@ allprojects {
 
     repositories {
         mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
+        google()
+//        maven {
+//            url 'https://maven.google.com/'
+//            name 'Google'
+//        }
     }
 }
 
